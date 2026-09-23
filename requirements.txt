@@ -1,3 +1,2 @@
-deriv-api
-asyncio
+python-deriv-api
 websockets
