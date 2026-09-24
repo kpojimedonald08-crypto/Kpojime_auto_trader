@@ -4,7 +4,7 @@ import websockets
 
 API_TOKEN = "pat_442f41c718647d66e4b5cee3471ebe5aa1e99b6a9223afc514efd8a84c30a0ef"
 APP_ID = 1089
-WS_URL = f"wss://ws.binaryws.com/websockets/v3?app_id={APP_ID}"
+WS_URL = f"wss://ws.derivws.com/websockets/v3?app_id={APP_ID}"
 
 SYMBOLS = {
     "EURUSD": "frxEURUSD",
