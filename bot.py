@@ -15,11 +15,11 @@ async def run_bot():
     while True:
         try:
             async with websockets.connect(
-                uri,
-                ping_interval=20,
-                ping_timeout=10,
-                extra_headers={"Origin": "https://app.deriv.com"}
-            ) as ws:
+    uri,
+    ping_interval=20,
+    ping_timeout=10,
+    additional_headers={"Origin": "https://app.deriv.com"}
+) as ws:
                 auth = await ws.send(json.dumps({"authorize": API_TOKEN}))
                 resp = json.loads(await ws.recv())
                 print("Auth:", resp.get("authorize", {}).get("loginid", "Failed"))
